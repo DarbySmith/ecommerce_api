@@ -103,6 +103,7 @@ export const update = async (id: string, updateValues: User) : Promise<UnitUser 
         updateValues.password = newPass        
     }
 
+    // ... means take UnitUser and replace only values given in updateValues
     users[id] = {
         ...userExists,
         ...updateValues
