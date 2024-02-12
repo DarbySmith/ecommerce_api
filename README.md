@@ -1,7 +1,39 @@
 # E-commerce API
 
-## Running
+## Running The Server
 - run script: $ `npm run dev`
+
+## Available endpoints 
+- GET `localhost:3000/users`: returns all users
+- GET `localhost:3000/user/:id`: returns a user with that id
+- POST `localhost:3000/register`: creates a new user
+    - request body:
+    ```json
+    {
+        "username": "darby",
+        "email": "darby@gmail.com",
+        "password": "password"
+    }
+    ```
+- POST `localhost:3000/login`: logs in a user
+    - request body:
+    ```json
+    {
+        "email": "darby@gmail.com",
+        "password": "password"
+    }
+    ```
+- PUT `localhost:3000/user/:id`: updates a user
+    - request body: 
+    ```json
+    {
+        "username": "general_sam",
+        "email": "general_sam@gmail.com",
+        "password": "password"
+    }
+    ```
+- DELETE `localhost:3000/user/:id`: deletes a user with given id
+
 
 ## Installation
 - $ npm init -y
