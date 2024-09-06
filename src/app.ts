@@ -30,3 +30,5 @@ app.use("/", userRouter)
 app.listen(PORT, () => {
     console.log(`Server is listening on port ${PORT}`)
 })
+
+console.log("This is a test")
